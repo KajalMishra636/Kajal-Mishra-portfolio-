@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kajal Mishra Portfolio</title>
+    <link rel="stylesheet" href="./css/portfoli.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Kajal Mishra</h1>
+            <p>Portfolio Website</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section (unchanged) -->
+        <section id="home">
+            <div class="hero">
+                <div class="hero-content">
+                    <h2>Welcome to My World</h2>
+                    <p>I’m Kajal Mishra, a [your profession, e.g., Web Developer, Designer] crafting impactful solutions with creativity and precision.</p>
+                    <a href="#portfolio" class="cta-button">Explore My Work</a>
+                </div>
+            </div>
+        </section>
+        <!-- Enhanced Portfolio Section -->
+        <section id="portfolio">
+            <div class="container">
+                <h2>My Work</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <div class="portfolio-carousel">
+                            <img src="project1-img1.jpg" alt="Project 1 Image 1" class="carousel-img active">
+                            <img src="project1-img2.jpg" alt="Project 1 Image 2" class="carousel-img">
+                            <img src="project1-img3.jpg" alt="Project 1 Image 3" class="carousel-img">
+                            <button class="carousel-prev">&larr;</button>
+                            <button class="carousel-next">&rarr;</button>
+                        </div>
+                        <div class="portfolio-details">
+                            <h3>Responsive Website</h3>
+                            <p>A fully responsive site built with HTML, CSS, and JavaScript. Features a dynamic UI with seamless navigation.</p>
+                            <ul class="portfolio-meta">
+                                <li><strong>Tools:</strong> HTML, CSS, JS</li>
+                                <li><strong>Duration:</strong> 3 weeks</li>
+                                <li><strong>Client:</strong> [Client Name]</li>
+                            </ul>
+                            <a href="#" class="portfolio-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-carousel">
+                            <img src="project2-img1.jpg" alt="Project 2 Image 1" class="carousel-img active">
+                            <img src="project2-img2.jpg" alt="Project 2 Image 2" class="carousel-img">
+                            <img src="project2-img3.jpg" alt="Project 2 Image 3" class="carousel-img">
+                            <button class="carousel-prev">&larr;</button>
+                            <button class="carousel-next">&rarr;</button>
+                        </div>
+                        <div class="portfolio-details">
+                            <h3>Branding Design</h3>
+                            <p>A complete branding package including logo, typography, and color scheme, crafted in Adobe Illustrator.</p>
+                            <ul class="portfolio-meta">
+                                <li><strong>Tools:</strong> Illustrator, Photoshop</li>
+                                <li><strong>Duration:</strong> 2 months</li>
+                                <li><strong>Client:</strong> [Client Name]</li>
+                            </ul>
+                            <a href="#" class="portfolio-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-carousel">
+                            <img src="project3-img1.jpg" alt="Project 3 Image 1" class="carousel-img active">
+                            <img src="project3-img2.jpg" alt="Project 3 Image 2" class="carousel-img">
+                            <img src="project3-img3.jpg" alt="Project 3 Image 3" class="carousel-img">
+                            <button class="carousel-prev">&larr;</button>
+                            <button class="carousel-next">&rarr;</button>
+                        </div>
+                        <div class="portfolio-details">
+                            <h3>E-commerce Platform</h3>
+                            <p>An online store developed with React and Node.js, optimized for performance and scalability.</p>
+                            <ul class="portfolio-meta">
+                                <li><strong>Tools:</strong> React, Node.js</li>
+                                <li><strong>Duration:</strong> 6 weeks</li>
+                                <li><strong>Client:</strong> [Client Name]</li>
+                            </ul>
+                            <a href="#" class="portfolio-link">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Kajal Mishra. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Carousel -->
+    <script>
+        document.querySelectorAll('.portfolio-item').forEach(item => {
+            const images = item.querySelectorAll('.carousel-img');
+            const prevBtn = item.querySelector('.carousel-prev');
+            const nextBtn = item.querySelector('.carousel-next');
+            let currentIndex = 0;
+
+            function showImage(index) {
+                images.fo

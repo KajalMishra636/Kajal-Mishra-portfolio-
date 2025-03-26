@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="./css/contact.css">
+</head>
+<body>
+
+ <!-- Header -->
+ <header>
+    <div class="container">
+        <h1>Kajal Mishra</h1>
+        <p>Portfolio Website</p>
+    </div>
+</header>
+
+<!-- Navigation -->
+<nav>
+    <ul>
+        <li><a href="http://127.0.0.1:5500/home.html#home">Home</a></li>
+        <li><a href="http://127.0.0.1:5500/about.html">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <div class="contact-form">
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder=" " required>
+                        <label for="name">Your Name</label>
+                        <span class="input-glow"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder=" " required>
+                        <label for="email">Your Email</label>
+                        <span class="input-glow"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder=" " rows="5" required></textarea>
+                        <label for="message">Your Message</label>
+                        <span class="input-glow"></span>
+                    </div>
+                    <button type="submit" class="submit-button">
+                        Send Message
+                        <span class="button-icon">➤</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
